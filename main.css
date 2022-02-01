@@ -4,6 +4,13 @@
 body{
 	background:#3F334D;
 	margin:0;
+	animation: fadeIn ease-in-out 2s;
+	animation-delay: 500ms;
+}
+
+@keyframes fadeIn{
+	0% {opacity:0;}
+	100% {opacity:1;}
 }
 
 .logo{
@@ -23,20 +30,40 @@ body{
 	justify-content: center;
 	align-items: center;
 }
+
 .circle{
 	display:flex;
 	align-items: center;
 	justify-content: center;
 	background: #BDEDE0;
-	width:200px;
-	height:200px;
+	width:181px;
+	height:181px;
 	border-radius:50%;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	font-size: 20pt;
 	color:#26547C;
 	border: 15px solid #B6B8D6;
 	z-index:2;
-	mix-blend-mode: hard-light;
+	opacity: 50%;
+	mix-blend-mode: color-dodge;
+	transition: 700ms ease-in-out;
+	animation: growShrink ease-in-out 2s;
+	animation-delay: 3s;
+}
+
+@keyframes growShrink{
+	25%{transform:scale(1.1);
+	mix-blend-mode: normal;
+	opacity:100%;}
+	75%{transform:scale(1.1);
+	mix-blend-mode: normal;
+	opacity:100%;}
+}
+
+.circle:hover{
+	transform:scale(1.1);
+	mix-blend-mode: normal;
+	opacity:100%;
 }
 
 .cutout{
@@ -55,7 +82,6 @@ body{
 	height:230px;
 	display:flex;
 	margin-left: 20px;
-	
 }
 
 .triangle{
@@ -65,4 +91,12 @@ body{
 	border-bottom: 50px solid transparent;
 	border-left: 50px solid transparent;
 	border-right: 50px solid #B6B8D6;
+}
+
+p{
+	transition:700ms;
+}
+
+.circle:hover p{
+	transform:rotate(-5deg)
 }
