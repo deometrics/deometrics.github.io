@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background:#3F334D;
+	margin:0;
+}
+
+.logo{
+	width:100vw;
+	height:100vh;
+	display: flex;
+	position:relative;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper{
+	width:100vw;
+	height:100vh;
+	position: absolute;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.circle{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	background: #BDEDE0;
+	width:200px;
+	height:200px;
+	border-radius:50%;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 20pt;
+	color:#26547C;
+	border: 15px solid #B6B8D6;
+	z-index:2;
+	mix-blend-mode: hard-light;
+}
+
+.cutout{
+	width:200px;
+	height:200px;
+	background:#3F334D;
+	position:absolute;
+	border-radius:50%;
+	margin-left:-90px;
+	margin-top:-10px;
+	
+}
+
+.container{
+	position:absolute;
+	height:230px;
+	display:flex;
+	margin-left: 20px;
+	
+}
+
+.triangle{
+	position:absolute;
+	width:0px;
+	height:0px;
+	border-bottom: 50px solid transparent;
+	border-left: 50px solid transparent;
+	border-right: 50px solid #B6B8D6;
+}
