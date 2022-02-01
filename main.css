@@ -47,7 +47,7 @@ body{
 	opacity: 50%;
 	mix-blend-mode: color-dodge;
 	transition: 700ms ease-in-out;
-	animation: growShrink ease-in-out 2s 3s;
+	animation: growShrink ease-in-out 3s 3s;
 }
 
 @keyframes growShrink{
@@ -95,7 +95,7 @@ body{
 p{
 	opacity:0;
 	transition:700ms;
-	animation: rotateText ease-in-out 2s 3s;
+	animation: rotateText ease-in-out 3s 3s;
 }
 
 @keyframes rotateText{
