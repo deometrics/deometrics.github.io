@@ -4,8 +4,7 @@
 body{
 	background:#3F334D;
 	margin:0;
-	animation: fadeIn ease-in-out 2s;
-	animation-delay: 500ms;
+	animation: fadeIn ease-in-out 2s 500ms;
 }
 
 @keyframes fadeIn{
@@ -47,8 +46,7 @@ body{
 	opacity: 50%;
 	mix-blend-mode: color-dodge;
 	transition: 700ms ease-in-out;
-	animation: growShrink ease-in-out 2s;
-	animation-delay: 3s;
+	animation: growShrink ease-in-out 2s 3s;
 }
 
 @keyframes growShrink{
@@ -94,9 +92,17 @@ body{
 }
 
 p{
+	opacity:0;
 	transition:700ms;
+	animation: rotateText ease-in-out 2s 3s;
+}
+
+@keyframes rotateText{
+	25%{opacity:1; transform:rotate(-5deg)}
+	75%{opacity:1; transform:rotate(-5deg)}
 }
 
 .circle:hover p{
+	opacity:1;
 	transform:rotate(-5deg)
 }
