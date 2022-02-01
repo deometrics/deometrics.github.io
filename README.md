@@ -1,1 +1,0 @@
-# deometrics.github.io
