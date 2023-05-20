@@ -1,0 +1,67 @@
+body{
+    background-image: url(funnyoldbaby.png); 
+    background-repeat: repeat; 
+    background-size: 22%;
+}
+
+#baby{
+    width: 11.5em;
+    height: 50%;
+}
+#baby, h1{
+    font-size: 2em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#donate{
+    z-index: 10;
+    width: 100vw;
+    display: flex;
+    justify-items: center;
+}
+
+#donate, img{
+    height:50%;
+    width: 25%;
+    
+}
+
+#wrapper{
+    z-index: 9;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    align-items: flex-end;
+}
+
+#fire{
+    background-image: url(fire.png);
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    -webkit-animation: linear forwards;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 10s;
+  }
+
+  @-webkit-keyframes run {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 0%;
+    }
+    100% {
+      left: 100%;    
+    }
+  }
+
+  #byebye{
+    position: absolute;
+    -webkit-animation: linear forwards;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 10s;
+  }
+
